@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="c1">
+        <form method="post" action="./?next={{redirect_to}}">
+            {% csrf token %}
+            <h2>LOG IN</h2>
+            <div class="user">
+               <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="user">
+                <input type="password" name="password" placeholder="Password" required>
+             </div>
+            <div class="remember">
+               <label><input type="checkbox">Remember me</label>
+               <a href="#">Forget password</a>
+            </div>
+            <button class="button" type="submit"><a href="/static/home.css" style="text-decoration: none;">Log in</a></button>
+            <div class="reg">
+                <p>Don't you have an account? <a href="/static/registartion.css">Register</a></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

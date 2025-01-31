@@ -7,26 +7,42 @@
     <link rel="stylesheet" href="/static/login.css">
 </head>
 <body>
-    <div class="c1">
-        <form method="post" action="./?next={{redirect_to}}">
-            {% csrf token %}
-            <h2>LOG IN</h2>
-            <div class="user">
-               <input type="text" name="username" placeholder="Username" required>
-            </div>
-            <div class="user">
-                <input type="password" name="password" placeholder="Password" required>
-             </div>
-            <div class="remember">
-               <label><input type="checkbox">Remember me</label>
-               <a href="#">Forget password</a>
-            </div>
-            <button class="button" type="submit"><a href="/static/home.css" style="text-decoration: none;">Log in</a></button>
-            <div class="reg">
-                <p>Don't you have an account? <a href="/static/registartion.css">Register</a></p>
-            </div>
-        </form>
-    </div>
-    
+<div class="c1">
+    <form id="loginForm">
+        <h2>LOG IN</h2>
+        <div class="user">
+           <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="user">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+         </div>
+        <div class="remember">
+           <label><input type="checkbox" id="rememberMe">Remember me</label>
+           <a href="#">Forget password</a>
+        </div>
+        <button class="button" type="submit"><a href="/templates/home.html" style="text-decoration: none;">Log in</a></button>
+        <div class="reg">
+            <p>Don't have an account? <a href="/templates/registration_page.html">Register</a></p>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) 
+    {
+        event.preventDefault(); // Prevent default form submission
+
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        // Save user data in localStorage
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password); 
+
+        // Redirect to profile page
+        window.location.href = "/templates/profile.html";
+    });
+</script>
+
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Notes</title>
+    <link rel="stylesheet" href="/static/take_note.css">
+</head>
+<body>
+    <header class="header">
+        <div class="icon">
+            <h2 class="logo">EduLift</h2>
+        </div>
+        <div class="ul">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="take_note.html">Take Notes</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="take-note" class="section">
+        <div class="container">
+            <h2>Take Notes</h2>
+            <p>Keep track of your learning by taking notes here!</p>
+            <form>
+                <label for="note-title">Note Title:</label><br>
+                <input type="text" id="note-title" name="note-title" placeholder="Enter note title" required><br><br>
+
+                <label for="note-content">Note Content:</label><br>
+                <textarea id="note-content" name="note-content" rows="10" placeholder="Write your notes here..." required></textarea><br><br>
+
+                <button type="submit">Save Note</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

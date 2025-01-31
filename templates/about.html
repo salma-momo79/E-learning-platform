@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="/static/about.css">
 </head>
 <body>
-    <div class="c1">
-        <div class="nav">
-            <div class="icon">
-                <h2 class="logo">EduLift</h2>
-            </div>
-            <div class="ul">
-                <ul>
-                    <li><a href="{% static 'home.html'%}">Home</a></li>
-                    <li><a href="{% static 'about.html'%}">About</a></li>
-                    <li><a href="{% static 'course.html'%}">Courses</a></li>
-                    <li><a href="{% static 'blog.html'%}">Blogs</a></li>
-                    <li><a href="{% static 'profile.html'%}">Profile</a></li>
-                </ul>
-            </div>
+    <header class="header">
+        <div class="icon">
+            <h2 class="logo">EduLift</h2>
         </div>
-        <div class="main">
-            <h2>About Us</h2>
+        <div class="ul">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="take_note.html">Take Notes</a></li>
+            </ul>
         </div>
-    </div>
+    </header>
+   
+
+    <section id="about" class="section">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>
+                EduLift is dedicated to provide the learning resources in Computer Science & Engineering.<br>
+                With lecture video tutorial playlist and other website platform for
+                learners of all levels.
+            </p>
+        </div>
+    </section> 
 </body>
 </html>
+

@@ -13,12 +13,20 @@
         </div>
         <div class="ul">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'course' %}">Courses</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'take_note' %}">Take Notes</a></li>
+
+
+                <!-- <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="course.html">Courses</a></li>
                 <li><a href="blog.html">Blogs</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="take_note.html">Take Notes</a></li>
+                <li><a href="take_note.html">Take Notes</a></li> -->
             </ul>
         </div>
     </header>
@@ -51,5 +59,12 @@
             <a href="#">Read More</a>
         </section>
     </section>
+
+    <a href="{% url 'home' %}">
+     <!-- <a href="home.html">
+    <a href="about.html">
+    <a href="course.html">
+    <a href="profile.html">
+    <a href="take_note.html">  -->
 </body>
 </html>

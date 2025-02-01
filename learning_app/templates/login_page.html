@@ -20,9 +20,9 @@
            <label><input type="checkbox" id="rememberMe">Remember me</label>
            <a href="#">Forget password</a>
         </div>
-        <button class="button" type="submit"><a href="/templates/home.html" style="text-decoration: none;">Log in</a></button>
+        <button class="button" type="submit"><a href="{% url 'home' %}" style="text-decoration: none;">Log in</a></button>
         <div class="reg">
-            <p>Don't have an account? <a href="/templates/registration_page.html">Register</a></p>
+            <p>Don't have an account? <a href="{% url 'registration' %}">Register</a></p>
         </div>
     </form>
 </div>
@@ -40,7 +40,7 @@
         localStorage.setItem("password", password); 
 
         // Redirect to profile page
-        window.location.href = "/templates/profile.html";
+        window.location.href = "{% url 'profile' %}";
     });
 </script>
 

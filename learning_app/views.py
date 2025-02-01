@@ -5,7 +5,7 @@ from django.contrib import messages
 # from django.http import httpResponse
 
 def home(request):
-    return render(request,'home.html')
+    return render(request, 'home.html')
 
 # def login(request):
 #     try:
@@ -32,19 +32,26 @@ def home(request):
 #     return render(request,'registration_page.html')
 
 
+def about(request):
+    return render(request, 'about.html')
+
 def login(request):
-    return render(request,'login_page.html')
+    return render(request, 'login_page.html')
 
 def registration(request):
-    return render(request,'registration_page.html')
+    return render(request, 'registration_page.html')
 
 def course(request):
-    return render(request,'course.html')
+    return render(request, 'course.html')
 
 def blog(request):
-    return render(request,'blog.html')
+    return render(request, 'blog.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
 
 def take_note(request):
-    return render(request,'take_note.html')
+    return render(request, 'take_note.html')
 
 

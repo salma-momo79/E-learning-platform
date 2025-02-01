@@ -11,12 +11,20 @@
         <h2 class="logo">EduLift</h2>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'course' %}">Courses</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'take_note' %}">Take Notes</a></li>
+
+                <!-- <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="course.html">Courses</a></li>
                 <li><a href="blog.html">Blogs</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="take_note.html">Take Notes</a></li>
+                <li><a href="take_note.html">Take Notes</a></li> -->
             </ul>
         </nav>
     </header>
@@ -36,14 +44,21 @@
             document.getElementById("displayUsername").innerText = username;
             document.getElementById("displayPassword").innerText = password; // Optional: Hide this for security reasons
         } else {
-            window.location.href = "/templates/login_page.html.html"; // Redirect if not logged in
+            window.location.href = "{% url 'login' %}"; // Redirect if not logged in
         }
 
         function logout() {
             localStorage.removeItem("username");
             localStorage.removeItem("password");
-            window.location.href = "/templates/login_page.html"; // Redirect to login
+            window.location.href = "{% url 'login' %}"; // Redirect to login
         }
     </script>
+      <a href="{% url 'home' %}">
+      <a href="{% url 'login' %}">
+    <!-- <a href="home.html">
+    <a href="about.html">
+    <a href="course.html">
+    <a href="blog.html">
+    <a href="take_note.html"> -->
 </body>
 </html>

@@ -25,7 +25,7 @@
         </div>
         <button class="button" type="submit">Register</button>
         <div class="reg">
-            <p>Already have an account? <a href="/templates/login.html">Login</a></p>
+            <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
         </div>
     </form>
 </div>
@@ -50,7 +50,7 @@
         localStorage.setItem("password", password);
 
         // Redirect to login page
-        window.location.href = "/templates/login_page.html";
+        window.location.href = "{% url 'login' %}";
     });
 </script>
 

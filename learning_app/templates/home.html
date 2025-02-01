@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="icon">
+            <h2 class="logo">EduLift</h2>
+        </div>
+        <div class="ul">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <!-- <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'registration' %}">Register</a></li> -->
+                <li><a href="{% url 'course' %}">Courses</a></li> 
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'take_note' %}">Take Notes</a></li>
+
+                <!-- <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="take_note.html">Take Notes</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <section id="home" class="section">
+        <div class="container">
+            <h4><em>Enhance the learning experience with <bold>EduLift</bold></em></h4>
+            <div class="log">
+                <p><i>Log in this site and enroll our courses for better learn</i> <a href="{% url 'login' %}">Login</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- <a href="about.html">
+    <a href="blog.html">
+    <a href="course.html">
+    <a href="profile.html">
+    <a href="take_note.html"> -->
+
+</body>
+</html>

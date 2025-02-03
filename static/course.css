@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f0ff;
+    color: #333;
+}
+
+/* header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #f4f0ff;
+}
+
+.ul ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.ul ul li {
+    margin: 0 15px;
+}
+
+.ul ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ul ul li a:hover {
+    color: #ffd700;
+}
+
+
+/* Section Styling */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Header Styling */
+.head {
+    /* background-color: white; */
+    padding: 20px;
+}
+
+.logo {
+    color:purple;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Course Card Styling */
+.course {
+    background: #b19cd9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+}
+
+.course h3 {
+    color: #4b0082;
+}
+
+.course p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.course a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #6a0dad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.course a:hover {
+    background: #4b0082;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Notes</title>
+    <link rel="stylesheet" href="/static/saved_note.css">
+</head>
+<body>
+    <h2>Saved Notes</h2>
+    <ul>
+        {% for note in notes %}
+            <li>
+                <h3>{{ note.title }}</h3>
+                <p>{{ note.content }}</p>
+                <p><em>Created at: {{ note.created_at }}</em></p>
+            </li>
+        {% empty %}
+            <li>No notes found.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'take_note' %}">Back to Note Taking</a>
+</body>
+</html>

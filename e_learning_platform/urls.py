@@ -48,8 +48,9 @@ urlpatterns = [
     path('login/',views.login , name='login'),
     path('registration/',views.registration , name='registration'),
     path('about/',views.about , name='about'),
-    path('course/',views.course , name='course'),
+    path('courses/', views.course_list, name='course'),
     path('blog/',views.blog , name='blog'),
     path('profile/',views.profile , name='profile'),
     path('take_note/',views.take_note , name='take_note'),
+    path('saved-notes/', views.saved_notes, name='saved_notes'),
 ]

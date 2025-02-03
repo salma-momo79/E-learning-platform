@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: purple; /* Purple color */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.header .ul ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.header .ul ul li {
+    margin: 0 15px;
+}
+
+.header .ul ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.header .ul ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+/* Home section with background image */
+#home {
+    background-image: url('/static/image/homepage_background_image.jpg.jpeg'); /* Add your cover image path here */
+    background-size: cover;
+    background-position: center;
+    color: #6a1b9a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#home h4 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home .log p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#home .log a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home .log a:hover {
+    color: #fff;
+}
+
+/* Features section */
+#features {
+    padding: 50px 20px;
+    background-color: #f3e5f5; /* Light purple */
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #6a1b9a; /* Purple color */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #6a1b9a; /* Purple color */
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Call to Action section */
+#cta {
+    background-color: #8e24aa; /* Darker purple */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#cta a {
+    background-color: #ffeb3b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#cta a:hover {
+    background-color:purple;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .ul ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .ul ul li {
+        margin: 10px 0;
+    }
+}

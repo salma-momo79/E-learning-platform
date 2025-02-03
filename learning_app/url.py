@@ -36,12 +36,11 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('login/', login, name='login'),
     path('registration/', registration, name='registration'),
-    path('course/', course, name='course'),
+    path('courses/', course_list, name='course'),
     path('blog/', blog, name='blog'),
     path('profile/', profile, name='profile'),
     path('take_note/', take_note, name='take_note'),
-
-
+    path('saved-notes/', saved_notes, name='saved_notes'),
 
     # path('',views.home , name='home'),
     # path('about/',views.about , name='about'),

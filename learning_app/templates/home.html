@@ -31,19 +31,47 @@
             </ul>
         </div>
     </header>
-    <section id="home" class="section">
-        <div class="container">
-            <h4><em>Enhance the learning experience with <bold>EduLift</bold></em></h4>
-            <div class="log">
-                <p><i>Log in this site and enroll our courses for better learn</i> <a href="{% url 'login' %}">Login</a></p>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h4><em>Enhance the learning experience with <bold>EduLift</bold></em></h4>
+                <div class="log">
+                    <p><i>Log in this site and enroll our courses for better learn</i></p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- <a href="about.html">
-    <a href="blog.html">
-    <a href="course.html">
-    <a href="profile.html">
-    <a href="take_note.html"> -->
-
+        </section>
+    
+        
+        <!-- Features Section  -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Why Choose <strong>EduLift?</strong></h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3> Interactive Learning</h3>
+                        <p>Can take note as your need for improve your learning activity.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Various Resources</h3>
+                        <p>Various course resources are available simultaneously.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Write blog </h3>
+                        <p>write blog in different type of study topics .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <!-- Call to Action -->
+        <section id="cta" class="section">
+            <div class="container">
+                <h2>Start Your Learning Journey Today!</h2>
+                <p>Join our course for enhance your skills with EduLift.</p>
+                <a href="{% url 'registration' %}">Join Now</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

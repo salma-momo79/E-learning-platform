@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Course List</title>
     <link rel="stylesheet" href="/static/course.css">
 </head>
 <body>
@@ -20,18 +20,13 @@
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'take_note' %}">Take Notes</a></li>
 
-                <!-- <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="take_note.html">Take Notes</a></li> -->
+
             </ul>
         </div>
     </header>
     
     <section id="course_page" class="section">
-
+        
         <div class="head">
             <h1 class="logo">EduLift - Courses</h1>
         </div>
@@ -72,20 +67,18 @@
                 <p>Software Engineering is a systematic and disciplined approach to the design, development, testing, and maintenance of software.</p>
                 <a href="#">Learn More</a>
             </div>
-    
-            <div class="course">
-                <h3>Operating system</h3>
-                <p>An Operating System(OS) is a software that manages and handles hardware and software resources of a computing device.</p>
-                <a href="#">Learn More</a>
-            </div>
-    
+
+            <!-- Display the course title and description passed from the view -->
+            {% for course in courses %}
+                <div class="course">
+                    <h3>{{ course.title }}</h3>
+                    <p>{{ course.description }}</p>
+                    <a href="{{ course.learn_more_url }}">Learn More</a>
+                </div>
+            {% endfor %}
+
         </div>
     </section>
-    <a href="{% url 'home' %}">
-    <!-- <a href="home.html">
-    <a href="blog.html">
-    <a href="about.html">
-    <a href="profile.html">
-    <a href="take_note.html"> -->
+   
 </body>
 </html>

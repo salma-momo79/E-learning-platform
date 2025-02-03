@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,13 +18,6 @@
                 <li><a href="{% url 'blog' %}">Blog</a></li>
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'take_note' %}">Take Notes</a></li>
-
-                <!-- <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="take_note.html">Take Notes</a></li> -->
             </ul>
         </nav>
     </header>
@@ -55,10 +48,83 @@
     </script>
       <a href="{% url 'home' %}">
       <a href="{% url 'login' %}">
-    <!-- <a href="home.html">
-    <a href="about.html">
-    <a href="course.html">
-    <a href="blog.html">
-    <a href="take_note.html"> -->
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EduLift</title>
+    <link rel="stylesheet" href="/static/profile.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h2 class="logo">EduLift</h2>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'course' %}">Courses</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'take_note' %}">Take Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+        <div class="profile-card">
+            <h2 id="displayUsername">Loading...</h2>
+            <p>Email: <span id="displayEmail">Loading...</span></p>
+            <p>Joined: <span id="displayJoinDate">Loading...</span></p>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section class="settings">
+        <h2>Settings</h2>
+        <button onclick="updateProfile()">Update Profile</button>
+        <button onclick="changePassword()">Change Password</button>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let username = localStorage.getItem("username");
+            let email = localStorage.getItem("email") || "Not Set";
+            let joinDate = localStorage.getItem("joinDate") || "N/A"; 
+
+            if (username) {
+                document.getElementById("displayUsername").innerText = username;
+                document.getElementById("displayEmail").innerText = email;
+                document.getElementById("displayJoinDate").innerText = joinDate;
+            } else {
+                window.location.href = "{% url 'login' %}"; 
+            }
+        });
+
+        function logout() {
+            if (confirm("Are you sure you want to logout?")) {
+                localStorage.clear();
+                window.location.href = "{% url 'login' %}";
+            }
+        }
+
+        function updateProfile() {
+            alert("Update Profile feature coming soon!");
+        }
+
+        function changePassword() {
+            alert("Change Password feature coming soon!");
+        }
+    </script>
+
 </body>
 </html>

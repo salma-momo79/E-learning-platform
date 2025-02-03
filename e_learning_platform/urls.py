@@ -18,30 +18,6 @@ from django.contrib import admin
 from django.urls import path,include
 from learning_app import views
 
-# urlpatterns = [
-#     path('admin/', admin.site.urls), 
-#     path('', home, name='home'),
-#     path('about/', about, name='about'),
-#     path('login/', login, name='login'),
-#     path('registration/', registration, name='registration'),
-#     path('course/', course, name='course'),
-#     path('blog/', blog, name='blog'),
-#     path('profile/', profile, name='profile'),
-#     path('take_note/', take_note, name='take_note'),
-
-# ]
-# urlpatterns = [
-#     path('admin/', admin.site.urls), 
-#     path('',views.home),
-#     path('login/',views.login),
-#     path('registration/',views.registration),
-#     path('course/',views.course),
-#     path('blog/',views.blog),
-#     path('profile/',views.profile),
-#     path('take_note/',views.take_note),
-
-# ]
-
 urlpatterns = [
     path('admin/', admin.site.urls), 
     path('',views.home , name='home'),
@@ -53,4 +29,5 @@ urlpatterns = [
     path('profile/',views.profile , name='profile'),
     path('take_note/',views.take_note , name='take_note'),
     path('saved-notes/', views.saved_notes, name='saved_notes'),
+    
 ]

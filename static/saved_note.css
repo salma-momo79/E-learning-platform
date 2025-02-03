@@ -1,15 +1,14 @@
-/* saved_notes.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3e5f5; /* Light purple background */
-    color: #4a148c; /* Dark purple text */
+    background-color: #f3e5f5; 
+    color: #4a148c;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    color: #6a1b9a; /* Medium purple heading */
+    color: #6a1b9a;
     margin-top: 20px;
 }
 
@@ -19,7 +18,7 @@ ul {
 }
 
 li {
-    background: #ffffff; /* White background for notes */
+    background: #ffffff;
     max-width: 500px;
     margin: 20px auto;
     padding: 15px;
@@ -28,7 +27,7 @@ li {
 }
 
 h3 {
-    color: #8e24aa; /* Purple shade */
+    color: #8e24aa;
 }
 
 p {

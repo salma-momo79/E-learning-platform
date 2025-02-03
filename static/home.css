@@ -12,8 +12,9 @@ body {
 }
 
 /* Header styles */
+
 .header {
-    background-color: purple; /* Purple color */
+    background-color: purple; 
     color: #fff;
     padding: 10px 0;
 }
@@ -46,13 +47,13 @@ body {
 }
 
 /* Main section */
+
 main {
     padding: 20px;
 }
 
-/* Home section with background image */
 #home {
-    background-image: url('/static/image/homepage_background_image.jpg.jpeg'); /* Add your cover image path here */
+    background-image: url('/static/image/homepage_background_image.jpg.jpeg'); 
     background-size: cover;
     background-position: center;
     color: #6a1b9a;
@@ -80,17 +81,16 @@ main {
     color: #fff;
 }
 
-/* Features section */
 #features {
     padding: 50px 20px;
-    background-color: #f3e5f5; /* Light purple */
+    background-color: #f3e5f5;
     text-align: center;
 }
 
 #features h2 {
     font-size: 2.2em;
     margin-bottom: 30px;
-    color: #6a1b9a; /* Purple color */
+    color: #6a1b9a;
 }
 
 .features-grid {
@@ -110,7 +110,7 @@ main {
 .feature h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #6a1b9a; /* Purple color */
+    color: #6a1b9a;
 }
 
 .feature p {
@@ -118,9 +118,8 @@ main {
     color: #666;
 }
 
-/* Call to Action section */
 #cta {
-    background-color: #8e24aa; /* Darker purple */
+    background-color: #8e24aa;
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -150,7 +149,6 @@ main {
     background-color:purple;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .features-grid {
         flex-direction: column;

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -17,6 +18,7 @@ body {
     border-radius: 10px;
     text-align: center;
 }
+
 h2 {
     font-size: 24px;
     color: #fff;
@@ -31,6 +33,7 @@ h2 {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .button {
     width: 100%;
     padding: 12px;
@@ -41,10 +44,12 @@ h2 {
     cursor: pointer;
     margin-top: 10px;
 }
+
 #reg_btn
 {
     background-color: #6c0082;
 }
+
 .button:hover {
     text-decoration: wavy;
 }
